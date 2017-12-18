@@ -1,0 +1,16 @@
+{
+  "name": "hello_world_chatbot",
+  "version": "1.0.0",
+  "description": "Basic Hello World Facebook Chatbot",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_hello_world_chatbot",
+    "update": "claudia update",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-bot-builder": "^2.15.0"
+  }
+}
