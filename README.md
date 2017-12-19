@@ -14,7 +14,7 @@ This repository contains a list of the prerequisite, which are needed to partici
 
 0. [Fulfill prerequisites](./00_fulfill_prerequisites)
 1. [Build Hello World chatbot](./01_build_hello_world_chatbot)
-2. [Parse input, read from DB and return structured Facebook message](./02_parse_input_db_structured_message)
+2. [Parse input, read from DB and use Facebook templates](./02_parse_input_db_facebook_templates)
 3. [Conversations in Dialogflow (linear dialog)](./03_linear_dialogflow_dialogs)
 4. [Build context in Dialogflow (non-linear dialog)](./04_non-linear_dialogflow_dialogs)
 5. [Call business logic from Dialogflow (fulfillments)](./05_dialogflow_fullfilments)
@@ -40,7 +40,7 @@ The following lists is an overview of topics we are going to talk about. There i
 - Task 1: Hello World chatbot
 - Facebook Dialog Elements
 - DynamoDB
-- Task 2: Parse input, read from DB and return structured Facebook message
+- Task 2: Parse input, read from DB and use Facebook templates
 - Conversational chatbots
     - Compare Wit.ai, Lex and Dialogflow
 - Deep dive Dialogflow

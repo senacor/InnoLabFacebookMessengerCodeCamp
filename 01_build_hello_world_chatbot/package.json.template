@@ -4,8 +4,9 @@
   "description": "Basic Hello World Facebook Chatbot",
   "main": "index.js",
   "scripts": {
-    "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_hello_world_chatbot",
+    "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_chatbot",
     "update": "claudia update",
+    "destroy": "claudia destroy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
