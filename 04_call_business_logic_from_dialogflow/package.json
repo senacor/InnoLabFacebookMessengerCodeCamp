@@ -4,8 +4,7 @@
   "description": "Basic Hello World Facebook Chatbot",
   "main": "index.js",
   "scripts": {
-    "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_basic_chatbot",
-    "configure": "claudia update --configure-fb-bot",
+    "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_dialogflow_chatbot --policies policies",
     "update": "claudia update",
     "destroy": "claudia destroy",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "claudia": "^2.14.3",
-    "claudia-bot-builder": "^2.15.0"
+    "claudia-api-builder": "^2.5.1",
+    "object-path": "^0.11.4"
   }
 }
