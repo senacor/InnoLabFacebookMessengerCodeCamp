@@ -4,7 +4,7 @@ Often you need to retrieve information from your database or a service in order 
 
 1. Deploy a new webhook! Similar to task 1, replace the `<your_prefix>` tag at the package.json.template and move the file to package.json. Deploy the lambda `npm run install` and `npm run create`. This time you can omit `npm run configure`, because we don't wire the lambda up with Facebook. Study the provided example code for this task! 
 
-2. Add Fulfillment at DynamoDB, enter the URL of the lambda you just created. See `npm run create` console output for URL. Choose "Enable for all Domains".
+2. Add a Fulfillment at Dialogflow and enter the URL of the lambda you just created. See `npm run create` console output for URL. Choose "Enable for all Domains".
 
 3. Switch to the intent you created previously and enable "Use webhook".
 
