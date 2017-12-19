@@ -28,3 +28,5 @@ Often you need to retrieve information from your database or a service in order 
 7. Add a new parameter "status" and define `#fill_parcel_status.status` as value. Also define `#fill_parcel_status.parcel_id` as default value for the parameter "parcel_id".
 
 8. Use returned status in bot answer by defining "The parcel with the id $parcel_id will arrive $status!"
+
+Hint: If you have troubles you can use our target solution, find `Testagent.zip` and import it to Dialogflow.
