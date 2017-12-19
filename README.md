@@ -22,7 +22,7 @@ This repository contains a list of the prerequisite, which are needed to partici
 
 ## Notes
 
-You can omit using Docker for running the commands, described in the tasks, if you have the AWS CLI and Node.js installed locally. If not, follow the instructions at [Fulfill prerequisites](./00_fulfill_prerequisites) regarding Docker and run all commands from inside your Docker.
+You can omit using Docker for running the commands described in the tasks, if you have the AWS CLI and Node.js installed locally. If not, follow the instructions at [fulfill prerequisites](./00_fulfill_prerequisites) regarding Docker and run all commands from inside your Docker.
 
 ## Topics
 

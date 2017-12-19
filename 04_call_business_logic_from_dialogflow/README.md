@@ -12,15 +12,15 @@ Often you need to retrieve information from your database or a service in order 
 
 5. Resolve with an event to Dialogflow!
 ``` 
-    {
-        followupEvent: {
-            data: {
-                parcel_id: parameters.parcel_id,
-                status: '<status>'
-            },
-            name: 'fill_parcel_status'
-        }
+{
+    followupEvent: {
+        data: {
+            parcel_id: parameters.parcel_id,
+            status: '<status>'
+        },
+        name: 'fill_parcel_status'
     }
+}
 ```
 
 6. Listen to event inside your intent, by creating an event at "Events" at your Parcel Status intent, name it `fill_parcel_status`.
