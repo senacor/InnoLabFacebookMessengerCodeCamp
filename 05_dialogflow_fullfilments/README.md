@@ -2,6 +2,8 @@
 
 Some intents need a certain context to be valid. E.g. if the user asks for a rerouting of a parcel you could require a context containing information about the parcel for the intent to be a valid possibility. You wold not expect a user to ask for rerouting if he did not ask for the current status before.
 
+Hint: If you have troubles you can use our target solution, find `dialogflow.zip` and import it to Dialogflow.
+
 1. Add outgoing context at "Parcel Status" intent, name it "parcel" and leave the default 5 minute lifespan as it is.
 
 2. Create a new intent "Reroute Parcel" and require the parcel context you just created as input context.

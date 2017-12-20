@@ -1,5 +1,5 @@
 {
-  "name": "hello_world_chatbot",
+  "name": "01_build_hello_world_chatbot",
   "version": "1.0.0",
   "description": "Basic Hello World Facebook Chatbot",
   "main": "index.js",

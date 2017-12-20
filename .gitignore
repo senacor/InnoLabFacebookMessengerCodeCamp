@@ -1,1 +1,3 @@
 node_modules
+# Everybody should deploy his own lambda
+claudia.json
