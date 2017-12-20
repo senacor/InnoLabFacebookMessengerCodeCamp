@@ -1,0 +1,1 @@
+aws s3 cp ./<your_prefix>-login.html s3://digital-logistic-web --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers

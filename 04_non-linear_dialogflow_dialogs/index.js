@@ -14,7 +14,7 @@ api.post('/', req => new Promise(resolve => {
 
     const parameters = objectPath.get(req, 'body.result.parameters')
 	
-    // Do database operations, find status, etc.
+    // TODO Do database operations, find status, etc.
     console.log(JSON.stringify(parameters))
     const status = `a random status ${Math.random()}`
 	
