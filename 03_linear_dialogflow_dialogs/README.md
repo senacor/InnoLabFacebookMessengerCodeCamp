@@ -11,3 +11,5 @@ Hint: If you have troubles you can use our target solution, find `dialogflow.zip
 3. Create the intent you want to handle: `Parcel Status Request`. Train Dialogflow to recognize this intent with a couple of sentences. Add the entity you just created as required parameter and define some prompts for it. Add a response, similar to `The parcel with the id $parcel_id will arrive tomorrow!`.
 
 4. You can test your solution via the "Try it now" text input field in the top right corner.
+
+5. Connect Facebook to your Dialogflow agent. In order to do that, you have to remove the "basic_chatbot" connection. Go to your Facebook app developer page -> Webhooks -> Edit Subscription -> Remove. To connect Dialogflow follow [their documentation](https://dialogflow.com/docs/integrations/facebook).
