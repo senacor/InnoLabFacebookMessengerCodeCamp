@@ -2,7 +2,7 @@
 
 Often you need to retrieve information from your database or a service in order to provide a full user response. E.g. if you have to ask your service the parcel's estimated arrival time. For this use case Dialogflow allows webhooks.
 
-1. Deploy a new webhook! Similar to task 1, replace the `<your_prefix>` tag at the `package.json.template` and rename the file to `package.json`. Deploy the lambda by typing `npm install` and `npm run create`. This time you can omit `npm run configure`, because we don't wire the lambda up with Facebook, but with Dialogflow. Study the provided example code for this task! 
+1. Deploy a new webhook! Similar to task 1, replace the `<your_prefix>` tag at the `package.json.template` and rename the file to `package.json`. Deploy the lambda by typing `npm run create`. This time you can omit `npm run configure`, because we don't wire the lambda up with Facebook, but with Dialogflow. Study the provided example code for this task! 
 
 2. Add a Fulfillment at Dialogflow and enter the URL of the lambda you just created. See `npm run create` console output for URL. Choose "Enable for all Domains".
 
