@@ -6,6 +6,8 @@ Dialogflow enables human-like conversations and identifying a user's
 intent. During this task we will build a
 [a linear dialog](https://dialogflow.com/docs/dialogs).
 
+![linear_dialog](linear_dialog.png)
+
 ## Task
 
 The chatbot should be able to response with a static status information

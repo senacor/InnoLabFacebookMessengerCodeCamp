@@ -10,7 +10,7 @@ efficient backend infrastructure.
 
 But of cause you can user every public rest service as you like.
 
-![image](Archithekture.png)
+![Archithekture_with_aws](Archithekture_with_aws.png)
 
 ## Task:
 

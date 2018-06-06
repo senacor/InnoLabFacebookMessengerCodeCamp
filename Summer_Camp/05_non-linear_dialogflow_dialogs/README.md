@@ -6,6 +6,8 @@ information about the parcel for the intent to be a valid possibility.
 You would not expect a user to ask for rerouting if he did not ask for
 the current status before.
 
+![non_linear_dialog](non_linear_dialog.png)
+
 ## task:
 
 Enhance the chatbot that the user will be able to reroute the parcel to
