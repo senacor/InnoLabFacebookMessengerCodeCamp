@@ -9,7 +9,7 @@ Facebook Page with its default answer.
 ## Task
 
 Please create a new Facebook page for your fictional logistic company
-with a messenger that can response auto response greetings.
+with a messenger that can auto response to your greetings.
 
 ## Steps
 
