@@ -39,9 +39,9 @@ This repository contains a list of the prerequisite, which are needed to partici
 - Verified and working [Google](https://google.com) account
 - Any editor to write Javascript, we recommend [VS Code](https://code.visualstudio.com/)
 
-[Fulfill prerequisites](./00_fulfill_prerequisites)
+[Fulfill prerequisites](../00_fulfill_prerequisites)
 
 ## Notes
 
-You can omit using Docker for running the commands described in the tasks, if you have the AWS CLI and Node.js installed locally. If not, follow the instructions at [fulfill prerequisites](./00_fulfill_prerequisites) regarding Docker and run all commands from inside your Docker.
+You can omit using Docker for running the commands described in the tasks, if you have the AWS CLI and Node.js installed locally. If not, follow the instructions at [fulfill prerequisites](../00_fulfill_prerequisites) regarding Docker and run all commands from inside your Docker.
 
