@@ -5,22 +5,22 @@ const api = new ApiBuilder({mergeVars: true})
 const name = 'fill_parcel_status'
 
 api.post('/', req => new Promise(resolve => {
-    const eventName = objectPath.get(req, 'body.result.resolvedQuery')
+    const eventName = objectPath.get(req, 'body.queryResult.queryText')
 	
     // Don't handle your own event!
     if (eventName === name) {
         return resolve({})
     }
 
-    const parameters = objectPath.get(req, 'body.result.parameters')
+    const parameters = objectPath.get(req, 'body.queryResult.parameters')
 	
     // TODO Do database operations, find status, etc.
     console.log(JSON.stringify(parameters))
     const status = `a random status ${Math.random()}`
 	
     return resolve({
-        followupEvent: {
-            data: {
+        followupEventInput: {
+            parameters: {
                 parcel_id: objectPath.get(parameters, 'parcel_id.parcel_id'),
                 status
             },

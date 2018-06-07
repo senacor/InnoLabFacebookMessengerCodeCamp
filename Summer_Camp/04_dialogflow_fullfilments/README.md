@@ -33,7 +33,7 @@ by calling a webhook.
 
 4. Use the user's query parameters, e.g. parcel_id, to read status from
    DynamoDB and return it. Find the parameters at `const parameters =
-   objectPath.get(req, 'body.result.parameters')`. See TODO at
+   objectPath.get(req, 'body.queryResult.parameters')`. See TODO at
    `index.js` for more detailed task description.
 
 5. Resolve with an event to Dialogflow!
