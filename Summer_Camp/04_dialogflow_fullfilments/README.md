@@ -25,7 +25,7 @@ by calling a webhook.
 
 2. The PrcelID entity must be named: @sys.number:parcelId
 
-3. Add as default Value to ParcelID: $parcelId
+3. Add as default Value to ParcelID: $parcel_id
 
 4. Add an additional status value with value #fill_parcel_status.status
 
