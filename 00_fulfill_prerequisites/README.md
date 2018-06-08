@@ -18,8 +18,8 @@ region = eu-central-1
 ## Docker
 We prepared a Docker container, containing the AWS CLI, Node.js and NPM for you. After you [installed Docker](https://docs.docker.com/engine/installation/), run:
 ```
-cd /path/to/this/repo/root
-docker build -t chatbot-cli . // Needs to be done only once
+docker pull kochp/chatbot-cli:v1
+docker build -t kochp/chatbot-cli:v1 . // Needs to be done only once
 docker run -it -v ~/.aws:/root/.aws -v /path/to/this/repo/root:/root/tasks chatbot-cli bash
 ```
 Run the following tasks from "inside" your docker container.
