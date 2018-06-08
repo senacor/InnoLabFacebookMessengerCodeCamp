@@ -17,7 +17,19 @@ But of cause you can user every public rest service as you like.
 Enhance the chatbot, that it is able to request the status dynamically
 by calling a webhook.
 
-## Steps:
+## Steps with existing webhook:
+
+1. Add fullfillmet service with Webhoock URL: https://oiru9dv2fi.execute-api.eu-central-1.amazonaws.com/latest
+
+2. Add Event to Intent: fill_parcel_status
+
+2. The PrcelID entity must be named: @sys.number:parcelId
+
+3. Add as default Value to ParcelID: $parcelId
+
+4. Add an additional status value with value #fill_parcel_status.status
+
+## Steps with developed Webhook:
 
 1. Deploy a new webhook! Replace the `<your_prefix>` tag at the
    `package.json.template` and rename the file to `package.json`. Deploy
