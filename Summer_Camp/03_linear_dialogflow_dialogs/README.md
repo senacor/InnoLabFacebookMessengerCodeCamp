@@ -31,9 +31,3 @@ will arrive tomorrow!".
 
 3. You can test your solution via the "Try it now" text input field in
 the top right corner.
-
-4. Connect Facebook to your Dialogflow agent. In order to do that, you
-have to remove the "basic_chatbot" connection. Go to your Facebook app
-developer page -> Webhooks -> Edit Subscription -> Remove. To connect
-Dialogflow follow
-[their documentation](https://dialogflow.com/docs/integrations/facebook).
