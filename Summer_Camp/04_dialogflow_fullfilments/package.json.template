@@ -1,0 +1,19 @@
+{
+  "name": "04_non-linear_dialogflow_dialogs",
+  "version": "1.0.0",
+  "description": "Basic Hello World Facebook Chatbot",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_dialogflow_chatbot --policies policies",
+    "update": "claudia update",
+    "destroy": "claudia destroy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "claudia": "^2.14.3",
+    "claudia-api-builder": "^2.5.1",
+    "object-path": "^0.11.4"
+  }
+}
