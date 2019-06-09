@@ -2,11 +2,17 @@
 
 In this task you will create a Facebook Page, a Facebook App and a simple AWS lambda with Claudia.js, which will answer the messages sent to your Facebook Page.
 
-1. To setup Facebook follow [our documentation](https://github.com/senacor/InnoLabFacebookMessenger/tree/master/docs/setup_facebook)!
+## 1. Facebook Page and App
 
-2. Replace `<your_prefix>` in `package.json.template` with a unique prefix, otherwise you will get name collisions with other code camp participants. Rename `package.json.template` to `package.json`.
+To setup Facebook follow [our documentation](https://github.com/senacor/InnoLabFacebookMessenger/tree/master/docs/setup_facebook)!
 
-3. Run `npm run create` to create your lambda.
+## 2. edit package.json
+
+Replace `<your_prefix>` in `package.json.template` with a unique prefix, otherwise you will get name collisions with other code camp participants. Rename `package.json.template` to `package.json`.
+
+## 3. Create AWS Lambda and API Gateway
+
+Run `npm run create`, claudia.js will create a Lambda and an API Gateway at AWS.
 
 ```
 > npm run create
@@ -27,36 +33,40 @@ In this task you will create a Facebook Page, a Facebook App and a simple AWS la
 }
 ```
 
-4. ~~Run `npm run configure`~~ Unfortunately the claudia-bot-builder version 4.5.0 does not work with Facebook API version 3.3. There is a PR pending fixing this: https://github.com/claudiajs/claudia-bot-builder/pull/133
+## 4. Configure Facebook webhook
 
-For now, find the AWS lambda you just created using claudia.js, in the AWS web interface and set an environment variable called `facebookVerifyToken` with any secret value. We are going to use that secret later.
+~~Run `npm run configure`~~ Unfortunately the claudia-bot-builder version 4.5.0 does not work with Facebook API version 3.3. There is a PR pending fixing this: https://github.com/claudiajs/claudia-bot-builder/pull/133
+
+Navigate to your [Lambda at the AWS Web Console](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions) and set an environment variable `facebookVerifyToken` with any secret value. We are going to use that secret later.
 
 ![](images/lambda.png)
 
-5. Now, we need to link the app to AWS and to the page. Therefore, we add a Webhook where incoming messages are forwarded to.
+## 5. Add Webhook and Messenger API to Facebook Page
 
-Go to `"Produkte" --> Webhooks --> "Einrichten"`
+Now, we need to link the app to AWS and to the page. Therefore, we add a Webhook where incoming messages are forwarded to.
+
+Add [Facebook Developers](developers.facebook.com) to `"Produkte" --> Webhooks --> "Einrichten"`
 
 ![](images/webhooks.png)
 
-Go to `"Produkte" --> Messenger --> "Einrichten"`
+... and then go to `"Produkte" --> Messenger --> "Einrichten"`
 
 ![](images/messenger.png)
 
-5. A click on "Webhooks einrichten" opens a popup to define the Callback-URL and the Verification Token for the Webhook. Insert `https://<restapi_id>.execute-api.eu-central-1.amazonaws.com/latest/facebook` as an URL and `<an-random-id>` as an token.
+## 6. Link Facebook App <--> AWS Lambda
 
-`<restapi_id>` can be obtained from the API Gateway in the AWS webinterface, which claudia.js created for us. The `<an-random-id>` is the secret value you entered as `facebookVerifyToken` previously.
+A click on "Webhooks einrichten" opens a popup to define the Callback-URL and the Verification Token for the Webhook. Insert the URL `api.deploy.facebook` retrieved at `npm run create` previously.
 
-![](images/configure_webhook.png)
+As a token enter the secret value you entered as `facebookVerifyToken` previously.
 
-6. Finally, we must define a page from which the app should receive notifications. We choose the one created earlier.
+## 7. Link Facebook Page <--> Facebook App
 
-![](images/register_event_listener.png)
+Finally, we must define a page from which the app should receive notifications. We choose the one created earlier.
 
-7. Write to your bot, wait for the response.
+## 8. Test it
 
-![](images/open_chat.png)
+Write to your bot, wait for the response.
 
-![](images/send_message.png)
+## 9. Inspect it
 
-8. Go to [AWS CloudWatch](https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#) and inspect your lambda's log files at "Protokolle".
+Go to [AWS CloudWatch](https://eu-central-1.console.aws.amazon.com/cloudwatch/home?region=eu-central-1#) and inspect your lambda's log files at "Protokolle".
