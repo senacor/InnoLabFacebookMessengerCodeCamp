@@ -5,15 +5,13 @@
   "main": "index.js",
   "scripts": {
     "create": "claudia create --region eu-central-1 --api-module index --name <your_prefix>_basic_chatbot",
-    "configure": "claudia update --configure-fb-bot",
     "update": "claudia update",
-    "destroy": "claudia destroy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "destroy": "claudia destroy"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "claudia": "^2.14.3",
-    "claudia-bot-builder": "^2.15.0"
+    "claudia": "^5.5.0",
+    "claudia-bot-builder": "^4.5.0"
   }
 }
