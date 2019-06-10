@@ -1,10 +1,10 @@
 # Parse input, read from DB and use Facebook templates
 
-In this task you will extend the lambda from task 1. Your chatbot will be able to react to certain keywords, read status information from a database and return Facebook templates.
+In this task you will extend the lambda from [task 1](../01_build_hello_world_chatbot). Your chatbot will be able to react to certain keywords, read status information from a database and return Facebook templates.
 
 ## 1. Parse incomming message
 
-Use Regex to parse your message, ensure the keyword "status" and an eight digit parcel number are part of the message. If it is not, let the user know, that you don't know what he is talking about. You can either return a single message (as in task 1), a list of messages or a promise, resolving with message(s). When doing IO operations like DynamoDB reads, as you will do later in this task, you need to return a promise and resolve it with your response as soon as your asynchronous tasks are done.
+Use Regex to parse your message, ensure the keyword "status" and an eight digit parcel number are part of the message. If it is not, let the user know, that you don't know what he is talking about. You can either return a single message (as in [task 1](../01_build_hello_world_chatbot)), a list of messages or a promise, resolving with message(s). When doing IO operations like DynamoDB reads, as you will do later in this task, you need to return a promise and resolve it with your response as soon as your asynchronous tasks are done.
 ``` 
 var botBuilder = require('claudia-bot-builder')
 module.exports = botBuilder(request => new Promise(resolve => {
