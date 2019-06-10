@@ -35,7 +35,7 @@ The following lists is an overview of topics we are going to talk about. There i
 - FaaS infrastructure
   - Lambda
   - API Gateway
-- Claudia.js
+- claudia.js
 - Task 0: Fulfill prerequisites
 - Task 1: Hello World chatbot
 - Facebook Dialog Elements
