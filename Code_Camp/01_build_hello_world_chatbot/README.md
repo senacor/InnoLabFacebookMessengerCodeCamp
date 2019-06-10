@@ -33,7 +33,7 @@ Run `npm run create`, claudia.js will create a Lambda and an API Gateway at AWS.
 }
 ```
 
-## 4. Configure Facebook webhook
+## 4. Configure Facebook Webhook
 
 ~~Run `claudia update --configure-fb-bot`~~ Unfortunately the claudia-bot-builder version 4.5.0 does not work with Facebook API version 3.3. There is a PR pending fixing this: https://github.com/claudiajs/claudia-bot-builder/pull/133
 
