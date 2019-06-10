@@ -6,7 +6,7 @@ In this task you will create a Facebook Page, a Facebook App and a simple AWS la
 
 To setup Facebook follow [our documentation](https://github.com/senacor/InnoLabFacebookMessenger/tree/master/docs/setup_facebook)!
 
-## 2. edit package.json
+## 2. Edit package.json
 
 Replace `<your_prefix>` in `package.json.template` with a unique prefix, otherwise you will get name collisions with other code camp participants. Rename `package.json.template` to `package.json`.
 
@@ -43,7 +43,7 @@ Navigate to your [Lambda at the AWS Web Console](https://eu-central-1.console.aw
 
 ## 5. Add Webhook and Messenger API to Facebook Page
 
-Now, we need to link the app to AWS and to the page. Therefore, we add a Webhook where incoming messages are forwarded to.
+Now, we need to link the app to AWS and to the Facebook Page. Therefore, we add a Webhook where incoming messages are forwarded to.
 
 Add [Facebook Developers](developers.facebook.com) to `"Produkte" --> Webhooks --> "Einrichten"`
 
@@ -55,17 +55,25 @@ Add [Facebook Developers](developers.facebook.com) to `"Produkte" --> Webhooks -
 
 ## 6. Link Facebook App <--> AWS Lambda
 
-A click on "Webhooks einrichten" opens a popup to define the Callback-URL and the Verification Token for the Webhook. Insert the URL `api.deploy.facebook` retrieved at `npm run create` previously.
+A click on "Webhooks einrichten" opens a popup where a Callback-URL and the Verification Token can be set. Insert the URL from `api.deploy.facebook` retrieved at `npm run create` previously.
 
-As a token enter the secret value you entered as `facebookVerifyToken` previously.
+As a token enter the secret value you defined as `facebookVerifyToken` previously.
+
+Choose `messages` from "Felder für Abonnement".
+
+![](images/new_webhook.png)
 
 ## 7. Link Facebook Page <--> Facebook App
 
 Finally, we must define a page from which the app should receive notifications. We choose the one created earlier.
 
+![](images/add_page.png)
+
 ## 8. Test it
 
 Write to your bot, wait for the response.
+
+![](images/test_it.png)
 
 ## 9. Inspect it
 
