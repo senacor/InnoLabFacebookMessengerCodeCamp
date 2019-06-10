@@ -45,4 +45,4 @@ docClient.getItem(param, (err, res) => {
 
 3. Return a [Facebook list template](https://developers.facebook.com/docs/messenger-platform/send-messages/template/list) representing the parcel's status. Optional: You can use Claudia.js [Facebook Template Builder](https://github.com/claudiajs/claudia-bot-builder/blob/master/docs/FB_TEMPLATE_MESSAGE_BUILDER.md) for that task.
 ![Facebook list template](./facebook_list_template.png)
-If you don't want to use (and host) your own icons, however we provide you online available images for all possible stati, have a look at [our S3 bucket](https://s3.console.aws.amazon.com/s3/buckets/digital-logistic-web/?region=eu-central-1&tab=overview).
+If you don't want to use (and host) your own icons, we provide you online available images for all possible stati, have a look at [our S3 bucket](https://s3.console.aws.amazon.com/s3/buckets/digital-logistic-web/?region=eu-central-1&tab=overview).
