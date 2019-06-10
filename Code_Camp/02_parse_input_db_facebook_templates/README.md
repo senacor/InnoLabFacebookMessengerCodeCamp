@@ -24,11 +24,11 @@ npm run destroy
 npm run create
 ```
 
-claudia.js will create an return a new URL to your Lambda. Set the `facebookVerifyToken` stage variable for your new API Gateway as in [task 1](../01_build_hello_world_chatbot) and change the webhook URL of your Facebook App.
+claudia.js will create an return a new URL to your Lambda. Set the `facebookVerifyToken` stage variable at your new API Gateway as in [task 1](../01_build_hello_world_chatbot) and change the webhook URL of your Facebook App.
 
 ![](images/change_webhook.png)
 
-claudia.js needs a `facebookAccessToken` and a `facebookAppSecret` in order to call the Facebook API asynchronously and reply messages after certain IO operations are done. Since `claudia update --configure-fb-bot` does not work with the current version of claudia and the most recent Facebook API, as discussed previously, you have to add those variables manually. Add the `facebookAccessToken` as stage variable as you did with `facebookVerifyToken` and att the `facebookAppSecret` as environment variable at your [Lambda at the web console](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions). Find the values at [your Facebook App](developers.facebook.com) at "Einstellungen" --> "Allgemeines" and "Messenger" --> "Zugriffsschlüssel".
+claudia.js needs a `facebookAccessToken` and a `facebookAppSecret` in order to call the Facebook API asynchronously and reply messages after certain IO operations are done. Since `claudia update --configure-fb-bot` does not work with the current version of claudia and the most recent Facebook API, as discussed previously, you have to add those variables manually. claudia.js expects those variables at different locations. Add the `facebookAccessToken` as stage variable as you did with `facebookVerifyToken` and add the `facebookAppSecret` as environment variable at your [Lambda at the web console](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions). Find the values at [your Facebook App](developers.facebook.com) at "Einstellungen" --> "Allgemeines" and "Messenger" --> "Zugriffsschlüssel".
 
 ![](images/token.png)
 ![](images/secret.png)

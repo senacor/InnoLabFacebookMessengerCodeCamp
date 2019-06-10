@@ -37,9 +37,9 @@ Run `npm run create`, claudia.js will create a Lambda and an API Gateway at AWS.
 
 ~~Run `claudia update --configure-fb-bot`~~ Unfortunately the claudia-bot-builder version 4.5.0 does not work with Facebook API version 3.3. There is a PR pending fixing this: https://github.com/claudiajs/claudia-bot-builder/pull/133
 
-Navigate to your [Lambda at the AWS Web Console](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions) and set an environment variable `facebookVerifyToken` with any secret value. We are going to use that secret later.
+Navigate to your [API Gateway at the AWS Web Console](https://eu-central-1.console.aws.amazon.com/apigateway/home?region=eu-central-1#/apis) --> "Stufen" --> "latest" --> "Stufenvariablen" and set a variable called `facebookVerifyToken` with any secret value. We are going to use that secret later.
 
-![](images/lambda.png)
+![](images/api_vars.png)
 
 ## 5. Add Webhook and Messenger API to Facebook Page
 
