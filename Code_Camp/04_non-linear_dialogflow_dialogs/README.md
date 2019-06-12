@@ -8,4 +8,4 @@ Some intents need a certain context to be valid. E.g. if the user asks for a rer
 
 3. Define a location parameter, make it required and choose `@sys.location` as entity. See the [Dialogflow documentation](https://dialogflow.com/docs/reference/system-entities) for more information about system entities.
 
-4. Define a response like "Alright, we will reroute your parcel with the id #parcel.parcel_id to $location!", note that you can access `#parcel.parcel_id` from your input context.
+4. Define a response like "Alright, we will reroute your parcel with the id #parcel.parcel_id to \$location!", note that you can access `#parcel.parcel_id` from your input context.

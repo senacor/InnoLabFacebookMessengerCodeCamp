@@ -2,9 +2,9 @@ const ApiBuilder = require('claudia-api-builder')
 const AWS = require('aws-sdk')
 // You will need this: const db = require('./db')
 
-AWS.config.update({region: 'eu-central-1'})
+AWS.config.update({ region: 'eu-central-1' })
 
-const api = new ApiBuilder({mergeVars: true})
+const api = new ApiBuilder({ mergeVars: true })
 
 /**
  * Finds user by request data; checks pw; creates and saves auth code and returns with auth code
@@ -16,7 +16,7 @@ const userLogin = req => {
     try {
         data = JSON.parse(req.body)
     } catch (e) {
-        return JSON.stringify({error: 'Could not parse payload'})
+        return JSON.stringify({ error: 'Could not parse payload' })
     }
 
     // ATTENTION: Logs password to log files!

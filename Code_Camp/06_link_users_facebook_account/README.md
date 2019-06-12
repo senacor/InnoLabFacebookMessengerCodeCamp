@@ -13,8 +13,9 @@ Before you can link the Digital Logistic account with the Facebook account, the 
 2. Implement `login_handler/index.js`, see TODOs
 
 3. Deploy handler
+
 ```
-cd login_handler
+cd /path/to/login_handler
 npm run create
 ```
 
@@ -29,6 +30,7 @@ See `./login_dialog` for code.
 2. Replace `<your_prefix>-login.html` at `deploy.sh`
 
 3. Deploy the static html page to AWS S3
+
 ```
 cd /path/to/login_dialog
 ./deploy.sh
@@ -43,6 +45,7 @@ See `./fb_webhook` for code.
 2. Deploy your lambda by typing `npm run create`.
 
 3. Since we cannot use the Claudia.js bot builder for this task, because we want Facebook requests to be handled in Dialogflow, we need to configure our Facebook/lambda setup manually. At the AWS web console go to the AWS lambda you just deployed and find the section "Environment variables". Create two variables. Make sure to replace the `<placeholders>`!
+
 ```
 dialogflow_webhook: https://bots.dialogflow.com/facebook/<dialogflow_agent_id>/webhook
 facebook_verify_token: <a-random-string>
@@ -51,6 +54,8 @@ facebook_verify_token: <a-random-string>
 4. Now go to your Facebook app page -> Webhooks and remove the current webhook by clicking on `Edit subscription`.
 
 5. Now add a new webhook at Facebook app page -> Messenger -> Section "Webhooks" and follow the instructions. Find the lambda's link at the CLI output of the `npm run create` command you run previously and make sure to tick `messages` and `messaging_account_linking`. Use the `<a-random-string>` you defined at step 3 as Verify Token. Go to AWS CloudWatch and verify your lambda got called by inspecting the log output.
+
+![](./images/webhook.png)
 
 6. At the Webhooks sections, subscribe to your Facebook page.
 
@@ -63,6 +68,7 @@ Build an Dialogflow intent, which returns the user a login or logout button. You
 1. Create a Login intent. Train it with some login statements.
 
 2. Add a custom payload response, make sure to replace `<your_prefix>`.
+
 ```
 {
   "facebook": {
@@ -82,6 +88,7 @@ Build an Dialogflow intent, which returns the user a login or logout button. You
 ```
 
 3. Create a logout intent with a custom payload response.
+
 ```
 {
   "facebook": {
