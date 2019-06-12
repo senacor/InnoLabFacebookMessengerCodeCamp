@@ -17,7 +17,7 @@ Often you need to retrieve information from your database or a service in order 
     followupEventInput: {
         parameters: {
             parcel_id: parameters.parcel_id,
-            status'<status>'
+            status: '<status>'
         },
         name: 'fill_parcel_status'
     }

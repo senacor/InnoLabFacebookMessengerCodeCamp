@@ -1,4 +1,4 @@
-var botBuilder = require("claudia-bot-builder")
+const botBuilder = require("claudia-bot-builder")
 
 module.exports = botBuilder(
   request => {
