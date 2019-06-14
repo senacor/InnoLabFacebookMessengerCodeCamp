@@ -5,6 +5,9 @@
 When taking part at this code camp, you should have gotten an E-Mail with your AWS credentials and you should have been added to this InnoLab IAM permission group. If this did not happen, contact us.
 [Create a new access key](http://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) and place a file with the following minimal configuration at `~/.aws/credentials`
 
+Driekt Link to AWS IAM:
+https://console.aws.amazon.com/iam/home?region=eu-central-1#/users/<EMAIL>?section=security_credentials
+
 ```
 [default]
 aws_access_key_id = <aws_access_key_id>
