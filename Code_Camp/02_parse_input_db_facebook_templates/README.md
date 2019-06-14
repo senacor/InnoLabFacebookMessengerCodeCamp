@@ -34,12 +34,7 @@ claudia.js will create an return a new URL to your Lambda. Set the `facebookVeri
 
 ![](images/change_webhook.png)
 
-In order to call the Facebook API and reply messages after certain IO operations are done claudia.js needs a facebookAccessToken and a facebookAppSecret. claudia.js expects those variables at different locations. 
-* Add the facebookAccessToken as stage variable as you did in [task 1](../01_build_hello_world_chatbot), find the value at "Messenger" --> "Zugriffsschlüssel"
-* Add the facebookAppSecret as environment variable at your [Lambda at the web console](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions), find the value at [your Facebook App](developers.facebook.com) at "Einstellungen" --> "Allgemeines"
-
-![](images/token.png)
-![](images/secret.png)
+Re-set the `facebookAccessToken` and `facebookAppSecret` as you did in [task 1](../01_build_hello_world_chatbot).
 
 ## 3. Create a DynamoDB called "parcels" and add entries
 
