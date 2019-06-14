@@ -41,6 +41,13 @@ Until its claudia.js is fixed you need to do the following manuelly: Navigate to
 
 ![](images/api_vars.png)
 
+In order to call the Facebook API claudia.js needs a facebookAccessToken and a facebookAppSecret. claudia.js expects those variables at different locations. 
+* Add the facebookAccessToken as stage variable as you did in [task 1](../01_build_hello_world_chatbot), find the value at "Messenger" --> "Zugriffsschlüssel"
+* Add the facebookAppSecret as environment variable at your [Lambda at the web console](https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions), find the value at [your Facebook App](developers.facebook.com) at "Einstellungen" --> "Allgemeines"
+
+![](images/token.png)
+![](images/secret.png)
+
 ## 5. Add Webhook and Messenger API to Facebook Page
 
 Now, we need to link the app to AWS and to the Facebook Page. Therefore, we add a Webhook where incoming messages are forwarded to.
