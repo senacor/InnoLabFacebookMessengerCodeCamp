@@ -12,6 +12,8 @@ Replace `<your_prefix>` in `package.json.template` with a unique prefix, otherwi
 
 ## 3. Create AWS Lambda and API Gateway
 
+Run `npm install`
+
 Run `npm run create`, claudia.js will create a Lambda and an API Gateway at AWS.
 
 ```
